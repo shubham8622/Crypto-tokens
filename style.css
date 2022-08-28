@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;500;600;700&family=Lexend:wght@200;300;400;500;600;700;800&family=Montserrat+Alternates:ital,wght@0,300;0,400;0,700;1,500&family=Montserrat:ital,wght@0,200;0,300;0,400;0,700;1,300;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300&family=Source+Sans+Pro:ital,wght@0,300;0,600;0,700;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+}
+.open-nav-mobile{
+    display: none;
+}
+.container{
+    width:min(90%,70rem);
+    margin-inline:auto;
+}
+.header{
+    background-color: #000000;
+    color: #ffffff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;    
+    align-items: center;
+    padding: 1.5rem 0;
+
+}
+.header-logo{
+    width: 6rem;
+}
+.header-logo img.logo {
+    max-width: 100%;
+}
+.line {
+    border-left: 0.1rem solid #ffffff;
+    width: 0rem;
+    color: #ffffff;
+    padding: 1rem;
+    margin-left: 4rem;
+    height: 1rem;
+}
+.grow-list{
+    flex: 1;
+}
+ul.list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    gap: 3rem;
+}
+button.button-small {
+    padding: 0.8rem 2rem;
+    color: #ffffff;
+    background-color: #ba0cc5;
+    border-radius: 0.5rem;
+    border: none;
+}
+.hero-section{
+    background-image: url("./assets/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+}
+h1.hero-heading {
+    font-size: 5rem;
+    color: #ffffff;
+}
+p.hero-description {
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+button.button-large {
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #ba0cc5;
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* RESPONSIVE START */
+
+@media only screen and (max-width:1440px) {
+    :root{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:1024px){
+    :root{
+        font-size: 11px;
+    }
+}
+@media only screen and (max-width:768px){
+    :root{
+        font-size: 9px;
+    }
+    .header-btn,
+    .grow-list,
+    .line{
+        display: none;
+    }
+    .open-nav-mobile{
+        display: block;
+        font-size: 2rem;
+    }
+    h1.hero-heading {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width:425px){
+    :root{
+        font-size: 8px;
+    }
+    h1.hero-heading {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width:375px){
+    :root{
+        font-size: 7px;
+    }
+    h1.hero-heading {
+        font-size: 3rem;
+    }
+}
