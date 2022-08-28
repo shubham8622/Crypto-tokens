@@ -4,7 +4,7 @@
 
 ## Check the live link.
 
-[Resturant hero section](https://crypto-tokens.vercel.app/)
+[Crypto Tokens](https://crypto-tokens.vercel.app/)
 
 ![badge](https://img.shields.io/badge/Vercel-Vercel-green)
  
